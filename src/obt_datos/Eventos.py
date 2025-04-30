@@ -6,7 +6,7 @@ import os
 from datetime import datetime
 
 # Leer dataset
-df_ciudades = pd.read_csv("../Modelo_recomendaci-n_Agencia_de_viajes/data/processed/Datos_climaticos_completos_hist.csv")
+df_ciudades = pd.read_csv(r"C:\Users\mafer\OneDrive\Escritorio\Predicccion_agencia_de_viajes_proyecto-fork-mfgs\data\processed\Datos_climaticos_completos_hist.csv")
 
 # Cargar variables de entorno
 load_dotenv()
@@ -21,7 +21,7 @@ num_eventos = []
 tipo_evento = []
 
 # URL base
-url = "https://www.eventbriteapi.com/v3/events/search/"
+url = "https://www.eventbriteapi.com/v3/users/me/?token=GXYZI5QMJASZFWC2L4C5"
 
 # Recorrer cada fila
 for idx, row in df_ciudades.iterrows():
